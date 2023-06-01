@@ -7,6 +7,15 @@ to replicate error run this command: `./gradlew run`
 
 ### With zinc set to 2.12
 
+gradle file:
+
+```gradle
+dependencies {
+    zinc "org.scala-sbt:zinc_2.12:1.6.1"
+    implementation 'org.scala-lang:scala-library:2.12.15'
+}
+```
+
 ```
 > Task :app:compileScala FAILED
 ## Exception when compiling 1 sources to /Users/tomasmazvila/Documents/Programming/test-gradle-plugin/app/build/classes/scala/main
@@ -92,6 +101,15 @@ BUILD FAILED in 1s
 ```
 
 ### Without zinc set to 2.12
+
+gradle file:
+
+```gradle
+dependencies {
+    // zinc "org.scala-sbt:zinc_2.12:1.6.1" <- No zinc set!
+    implementation 'org.scala-lang:scala-library:2.12.15'
+}
+```
 
 ```
 > Task :app:compileScala FAILED
