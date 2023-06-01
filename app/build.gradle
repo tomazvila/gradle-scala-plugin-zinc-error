@@ -16,7 +16,7 @@ configurations.all {
 }
 
 dependencies {
-    zinc "org.scala-sbt:zinc_2.12:1.6.1"
+    // zinc "org.scala-sbt:zinc_2.12:1.6.1"
     implementation 'org.scala-lang:scala-library:2.12.15'
 }
 
