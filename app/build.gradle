@@ -7,10 +7,10 @@ repositories {
     mavenCentral()
 }
 
-configurations.all {
+configurations.zinc {
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
       if (details.requested.group == 'org.scala-lang') {
-        details.useVersion '2.12.15'
+        details.useVersion '2.13.11'
       }
     }
 }
